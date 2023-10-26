@@ -1,4 +1,21 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
+@layer base {
+    @font-face {
+        font-family: "Sk-Modernist";
+        src: url("./_assets/fonts/Sk-Modernist/Sk-Modernist-Regular.otf");
+    }
+
+    @font-face {
+        font-family: "Sk-Modernist";
+        src: url("./_assets/fonts/Sk-Modernist/Sk-Modernist-Bold.otf");
+        font-weight: bold;
+    }
+
+    @font-face {
+        font-family: "Sk-Modernist-Mono";
+        src: url("./_assets/fonts/Sk-Modernist/Sk-Modernist-Mono.otf");
+    }
+}

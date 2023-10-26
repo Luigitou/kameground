@@ -1,9 +1,14 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
+  content: ['./app/**/*.{js,ts,jsx,tsx,mdx}'],
   mode: 'jit',
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sk: 'Sk-Modernist, serif',
+        skMono: 'Sk-Modernist-Mono, monospace',
+      },
+    },
   },
   variants: {
     extend: {},

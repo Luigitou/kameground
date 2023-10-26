@@ -7,6 +7,7 @@
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
+    "typeRoots": ["./src/@types", "./node_modules/@types"],
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
@@ -21,6 +22,9 @@
     "paths": {
       "@/*": ["./*"],
       "@components/*": ["./app/_components/*"],
+      "@assets/*": ["./app/_assets/*"],
+      "@types/*": ["./app/_types/*"],
+      "@layouts/*": ["./app/_layouts/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
