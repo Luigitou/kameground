@@ -1,3 +1,5 @@
+'use client';
+
 import { IconButton } from '@components/Buttons';
 import { Discord } from '@assets/images';
 
@@ -6,12 +8,16 @@ export default function Home() {
     <>
       <header
         className={
-          'text-white px-6 py-6 flex flex-row align-middle justify-between gap-8'
+          'text-white px-6 py-6 flex flex-row items-center justify-between gap-8'
         }
       >
         <h1 className={'font-sk font-bold text-3xl'}>Kameground</h1>
-        <nav className={'flex flex-grow align-middle justify-end'}>
-          <IconButton icon={Discord} backgroundColor={'bg-[#5452DC]'} />
+        <nav className={'flex flex-grow items-center justify-end h-full'}>
+          <IconButton
+            icon={Discord}
+            backgroundColor={'bg-[#5452DC]'}
+            optionalText={'Discord'}
+          />
         </nav>
       </header>
       <div
