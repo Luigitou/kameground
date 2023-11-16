@@ -16,9 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={'bg-black'}>
+      <body className={'bg-black flex flex-col min-h-screen'}>
         <Header />
-        {children}
+        <main className={'grow flex text-white font-sk'}>{children}</main>
       </body>
     </html>
   );

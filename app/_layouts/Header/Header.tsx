@@ -20,10 +20,7 @@ export default function Home() {
           />
         </nav>
       </header>
-      <div
-        id={'headerSeparator'}
-        className={'flex flex-row flex-grow flex-nowrap'}
-      >
+      <div id={'headerSeparator'} className={'flex flex-row flex-nowrap'}>
         <span
           className={
             'h-0.5 w-6/12 bg-gradient-to-r from-[#FFFFFF55] via-black via-30% to-[#FFFFFF55]'
