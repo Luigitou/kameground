@@ -1,0 +1,4 @@
+.outlineText {
+    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke: 3px white;
+}
